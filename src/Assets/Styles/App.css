@@ -1,0 +1,1790 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/*Header CSS Starts */
+header {
+    width: 100%;
+    background: url(../Images/Group\ 123.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background: url(../Images/Group\ 123.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbaar {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 99999;
+}
+
+.navbaar img {
+    width: 200px;
+}
+
+.navbaar ul {
+    display: flex;
+    padding-left: 0;
+    transition: 0.7s;
+    align-items: center;
+}
+
+.navbaar ul li {
+    list-style: none;
+    margin-right: 80px;
+    font-size: 18px;
+    transition-delay: 0.5s;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    z-index: 1;
+}
+
+.navbaar ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    width: 0;
+    height: 5px;
+    background-color: #E8C56B;
+    transition: 0.4s;
+}
+
+.navbaar ul li:hover a {
+    height: 100%;
+}
+
+.navbaar ul li:last-child:hover a:last-child {
+    color: #E8C56B;
+}
+
+.navbaar ul li:hover::before {
+    width: 100%;
+}
+
+.navbaar ul li:last-child::before {
+    display: none;
+}
+
+.navbaar ul li a {
+    text-decoration: none;
+    color: #E8C56B;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+    z-index: 2;
+}
+
+.loginBTNCustom {
+    padding: 27px 100px;
+    background-color: #3D9B8E;
+    border: 5px solid #185D54;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: -1px 16px 0px -12px rgba(243, 181, 22, 0.75);
+    -webkit-box-shadow: -1px 16px 0px -12px rgba(243, 181, 22, 0.75);
+    -moz-box-shadow: -1px 16px 0px -12px rgba(243, 181, 22, 0.75);
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomIMG {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    filter: contrast(10%) brightness(70%);
+}
+
+.topIMG {
+    width: 60px !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.loginBTNCustom::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 8px;
+    right: 10px;
+    top: 5px;
+    border-radius: 50%;
+    background-color: #69EFF4;
+    z-index: 1;
+}
+
+.loginBTNCustom::after {
+    content: "Sign In";
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.loginBTN {
+    position: relative;
+}
+
+.loginBTN::before {
+    content: "Sign In";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: -5px;
+    color: #E8C56B;
+    font-size: 22px;
+}
+
+.loginBTNCustom:hover.loginBTN::before {
+    color: #F3B516;
+}
+
+.faBars {
+    color: #fff;
+    font-size: 2.5em;
+    display: none;
+    cursor: pointer;
+}
+
+.loginBTN.loginActive {
+    display: block;
+}
+
+.navbaar ul.active {
+    height: 70%;
+    padding: 20px 0;
+    background-color: #E8C56B;
+    z-index: 99999;
+}
+
+.navbaar ul.active li {
+    display: block;
+}
+
+.navbaar ul.active li a {
+    color: #fff;
+}
+
+.btnDiv {
+    width: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+.btnDiv a {
+    padding: 27px 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #E8C56B;
+}
+
+.btnDiv a:hover {
+    color: #F3B516;
+}
+
+.btnDiv a::after {
+    content: "See More";
+    top: 30% !important;
+}
+
+/* Header CSS End */
+
+/* Section One CSS Starts */
+.backgroundImage {
+    background: url(../Images/Group\ 123.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-one-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+
+.section-one-txt h1 {
+    color: #E8C56B;
+    font-size: 60px;
+}
+
+.section-one-txt h3 {
+    color: #F4A261;
+}
+
+.section-one-txt p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.section-one-input {
+    width: 45%;
+    height: 55px;
+    border: 4px solid #E8C56B;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section-one-input input {
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: #E8C56B;
+}
+
+.section-one-input input::placeholder {
+    color: #E8C56B;
+}
+
+.faMagnifyingGlass {
+    padding-left: 5px;
+    padding-right: 10px;
+    font-size: 26px;
+    color: #E8C56B;
+    cursor: pointer;
+}
+
+/* Section One CSS End */
+
+/* Section Two CSS Starts  */
+.section-two {
+    width: 100%;
+    background: url(../Images/bg-wool-dark.png);
+    background-position: center;
+    background-size: cover;
+    background-size: 100vw 500vh;
+    background-repeat: no-repeat;
+    padding: 60px 0 40px 0;
+}
+
+.section-two-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-two-cards .cards {
+    width: 200px;
+    margin: 10px;
+    border: 4px solid #707070;
+}
+
+.section-two h1 {
+    color: #F4A261;
+    text-align: center;
+}
+
+.seeMoreBTN {
+    position: relative;
+    margin: 40px 0;
+}
+
+.seeMoreBTN::before {
+    content: "See More";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 22%;
+    color: #E8C56B;
+    font-size: 22px;
+}
+
+/* Section Two CSS End  */
+
+/* Section Three CSS Starts */
+.section-three {
+    width: 100%;
+    height: 150vh;
+    background: url(../Images/bg-wool-light.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.section-three::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    bottom: -200px;
+    z-index: -1;
+}
+
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.sectionBackground {
+    width: 80%;
+    height: 100%;
+    background-color: #3D9B8E;
+    border-radius: 30px;
+    box-shadow: -1px 79px 91px -45px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 79px 91px -45px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 79px 91px -45px rgba(0, 0, 0, 0.75);
+    position: relative;
+}
+
+.sectionThreeBTNLink {
+    text-decoration: none !important;
+}
+
+.sectionthreecarousal h1 {
+    color: #3D9B8E;
+    text-align: center;
+}
+
+.carousal {
+    overflow: hidden;
+}
+
+.slick-prev {
+    left: 15px !important;
+}
+
+.slick-next {
+    right: 25px !important;
+}
+
+.slick-prev::before {
+    font-size: 40px !important;
+    background: url(../Images/Group\ 163.png);
+    background-position: center;
+    background-size: cover;
+    color: transparent !important;
+}
+
+.slick-next::before {
+    font-size: 40px !important;
+    background: url(../Images/arrow\ right.png);
+    background-position: center;
+    background-size: cover;
+    color: transparent !important;
+}
+
+.members {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.members h2 {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.memberBTN {
+    position: relative;
+}
+
+.memberBTN::before {
+    content: "View Profile";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 22%;
+    color: #E8C56B;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.membersbtnDiv {
+    width: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+.membersbtnDiv a {
+    padding: 27px 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #E8C56B;
+}
+
+.membersbtnDiv a:hover {
+    color: #E8C56B;
+}
+
+.membersbtnDiv a::after {
+    content: "View Profile";
+    left: 20% !important;
+    top: 30% !important;
+}
+
+.imgDiv {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #649A8D;
+    position: relative;
+}
+
+.imgDiv::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+    border: 10px solid #fff;
+}
+
+.treyImage {
+    border-radius: 50%;
+    transform: translateX(10px) scale(2.5);
+}
+
+.rightIndicator {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    padding-bottom: 150px;
+    align-items: center;
+    padding-left: 40px;
+    transform: rotate(180deg);
+}
+
+.rightIndicator img {
+    cursor: pointer;
+}
+
+.middle-background {
+    width: 100%;
+    height: 20vh;
+    background: url(../Images/trans-top-darkwool.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.sectionThreeBTN {
+    position: relative;
+    margin-left: 50px;
+    background-color: #E8C56B;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 8px solid #F4A261;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.sectionThreeBTN:hover {
+    color: #000;
+}
+
+.imgBottom {
+    width: 96%;
+    position: absolute;
+    left: 8px;
+    bottom: 5px;
+}
+
+.imgTop {
+    width: 20%;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+}
+
+.imgWhale {
+    width: 500px;
+    position: absolute;
+    top: -18%;
+    right: -6%;
+}
+
+.sectionThreeBTN::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    top: 10px;
+    right: 17px;
+    border-radius: 60%;
+    background-color: #fff;
+}
+
+.sectionBackground h2 {
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Section Three CSS End */
+
+
+/* Footer CSS Start */
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 240px;
+}
+
+.footer-section {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo p {
+    padding-left: 25px;
+    color: #8A9AAA;
+}
+
+.footer-links {
+    padding-top: 60px;
+    padding-left: 25px;
+}
+
+.footer-links h6 {
+    color: #3D9B8E;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+
+.footer-links ul {
+    padding-left: 0;
+}
+
+.footer-links ul li {
+    list-style: none;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #8A9AAA;
+}
+
+.footer-contact {
+    padding-top: 60px;
+    padding-left: 25px;
+}
+
+.footer-contact h6 {
+    color: #3D9B8E;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+
+.footer-contact p {
+    color: #8A9AAA;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.footer-last {
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #707070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-last h3 {
+    color: #8A9AAA;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Footer CSS End */
+
+
+
+/* LOGIN PAGE CSS Start*/
+
+.loginForm {
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/Group\ 123.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginForm input {
+    width: 40%;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 4px solid #E8C56B;
+    border-radius: 9px;
+    margin-top: 20px;
+    color: #E8C56B;
+}
+
+.loginForm input::placeholder {
+    color: #E8C56B;
+}
+
+.LoginBTNimg {
+    width: 40%;
+}
+
+.imgAnchor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 20px 0;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.imgAnchor:hover {
+    color: #000;
+}
+
+.imgAnchor::before {
+    content: "Sign In";
+    position: absolute;
+}
+
+.forgotPasswordSpan {
+    color: #E8C56B;
+    padding-top: 10px;
+}
+
+.SignUpSpan {
+    color: #fff;
+}
+
+.SignUpSpan a {
+    color: #E8C56B;
+    text-decoration: none;
+}
+
+.SignUpSpan a:hover {
+    color: #E8C56B;
+}
+
+.bottom {
+    width: 100%;
+    height: 60px;
+    border-top: 3px solid #E8C56B;
+    margin-top: 60px;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom h6 {
+    color: #fff;
+    padding-top: 5px;
+}
+
+/* LOGIN PAGE CSS End*/
+
+
+/* SIGNUP PAGE CSS Start*/
+
+.registerForm {
+    width: 100%;
+    height: 110vh;
+    background: url(../Images/Group\ 123.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registerForm input {
+    width: 40%;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 4px solid #E8C56B;
+    border-radius: 9px;
+    margin-top: 20px;
+    color: #E8C56B;
+}
+
+.registerForm input::placeholder {
+    color: #E8C56B;
+}
+
+.imgAnchor2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 20px 0;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.imgAnchor2:hover {
+    color: #000;
+}
+
+.imgAnchor2::before {
+    content: "Sign Up";
+    position: absolute;
+}
+
+/* SIGNUP PAGE CSS End*/
+
+/* FAQ CSS Start */
+
+.faqSection {
+    width: 100%;
+    background: url(../Images/bg-wool-light.png);
+    padding: 50px 0;
+    font-family: "Poppins";
+}
+
+.faqSection h1 {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
+
+.accordion-button::after {
+    background-image: url(../Images/Group\ 732.png) !important;
+    transform: scale(1.75) !important;
+    transition: 0.5s !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../Images/Group\ 731.png) !important;
+    transform: scale(1.75) rotate(180deg) !important;
+}
+
+.accordion-item {
+    margin: 0 100px 100px 100px !important;
+    border-radius: 10px !important;
+}
+
+.accordion-button {
+    border-radius: 10px !important;
+    transition: 0.5s !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000 !important;
+    background-color: #fff !important;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%) !important;
+}
+
+.accordion-body {
+    padding: 30px !important;
+    color: #264653 !important;
+}
+
+.accordion-button {
+    padding: 32px !important;
+    font-size: 22px !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #707070 !important;
+    border-bottom: 1px solid #707070 !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.section2 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.section2::before {
+    width: 100%;
+    content: "";
+    position: absolute;
+    background: url(../Images/bg-wool-light.png);
+    height: 25%;
+}
+
+.sectionBackground2 {
+    width: 80%;
+    height: 100%;
+    background-color: #3D9B8E;
+    border-radius: 30px;
+    box-shadow: -1px 79px 91px -45px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 79px 91px -45px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 79px 91px -45px rgba(0, 0, 0, 0.75);
+    position: relative;
+}
+
+.sectionBackground2 h2 {
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* FAQ CSS End */
+
+
+/* PUBLIC PROFILE CSS Start*/
+
+.profileSection {
+    width: 100%;
+    background-color: #D3E2E0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 0;
+    font-family: "Poppins";
+}
+
+.profileSection::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../Images/Group\ 122.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profileImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profileImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profileImg::before {
+    content: "";
+    position: absolute;
+    width: 108%;
+    height: 108%;
+    top: -9px;
+    left: -9px;
+    border-radius: 50%;
+    border: 3px dashed #E56E50;
+}
+
+.profileText {
+    width: 60%;
+    padding-left: 50px;
+}
+
+.profileText h3 {
+    color: #3D9B8E;
+}
+
+.profileCards {
+    margin-bottom: 10px;
+}
+
+.public-profile-cards .publicProfileCards {
+    border: 4px solid #707070;
+}
+
+/* PUBLIC PROFILE CSS End*/
+
+
+/* EDIT PROFILE CSS Start*/
+
+.editProfileSection {
+    width: 100%;
+    background: url(../Images/bg-wool-light.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Poppins";
+}
+
+.profileAvatar {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    border-radius: 50%;
+    position: relative;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.profileAvatar::before {
+    content: "";
+    position: absolute;
+    inset: -10%;
+    border-radius: 50%;
+    border: 3px dashed #E56E50;
+    cursor: pointer;
+}
+
+.profileAvatar1 {
+    width: 80px;
+    height: 80px;
+    margin-top: 35px;
+    border-radius: 50%;
+    position: relative;
+    background: url(../Images/3.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+.profileAvatar1::before {
+    content: "";
+    position: absolute;
+    inset: -10%;
+    border-radius: 50%;
+    border: 2px dashed #E56E50;
+    animation: spin 60s linear infinite;
+    cursor: pointer;
+}
+
+.profileAvatarMenus {
+    position: absolute;
+    width: 180px;
+    height: 160px;
+    border-radius: 20px;
+    left: -30%;
+    top: 130%;
+    background-color: #fff;
+    box-shadow: 2px 0px 21px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 2px 0px 9px -1px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 2px 0px 21px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.6s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.profileAvatarMenus span {
+    width: 100%;
+    height: 33%;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #707070;
+}
+
+.profileAvatarMenus span:last-child {
+    border: none;
+}
+
+.profileAvatarMenus span img {
+    width: 33px;
+    height: 22px;
+    padding-right: 10px;
+}
+
+.profileAvatarMenus::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: #fff;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    left: 20%;
+    top: -7%;
+    border-radius: 5px;
+    transition-delay: 0.6s;
+}
+
+.profileAvatarMenus.active::before {
+    display: block;
+}
+
+.toggleProfileMenus {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top: 23%;
+    left: -6%;
+    background-color: transparent;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.editProfileSection1 {
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 90px 10px;
+}
+
+.editProfileSection1-1 {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 2px 0px 21px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 2px 0px 9px -1px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 2px 0px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
+.editProfileSection1-1 .profileAvatar {
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    background-size: 360px;
+}
+
+.editProfileSection1-1 .profileAvatar::before {
+    width: 110%;
+    height: 110%;
+    top: -8px;
+    left: -8px;
+    animation: none;
+}
+
+.cameraIMG {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: -15px;
+    bottom: 20px;
+    background-color: #3D9B8E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cameraIMG input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.editProfileSection1-2 {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 0px 21px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 2px 0px 9px -1px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 2px 0px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
+.editProfileSection1-2 .profileDiv {
+    width: 100%;
+    height: 33%;
+    border-bottom: 2px solid #707070;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.editProfileSection1-2 .profileDiv span {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.editProfileSection1-2 .myNfts {
+    width: 100%;
+    height: 33%;
+    border-bottom: 2px solid #707070;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.editProfileSection1-2 .myNfts span {
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+.editProfileSection1-2 .walletDiv {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.editProfileSection1-2 .walletDiv span {
+    padding-left: 10px;
+
+}
+
+.editProfileSection1-3 {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 2px 0px 21px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 2px 0px 9px -1px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 2px 0px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
+.editProfileSection1-3 .msgDiv {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #E56E50;
+}
+
+.editProfileSection1-3 .msgDiv img {
+    margin-right: 10px;
+}
+
+.editProfileSection1-3 .msgDiv {
+    position: relative;
+}
+
+.editProfileSection1-3 .msgDiv .lastSpan {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.msgSections {
+    width: 95%;
+    display: flex;
+    overflow-y: scroll;
+    transition: 0.8s;
+}
+
+.msgSections::-webkit-scrollbar {
+    width: 10px;
+}
+
+.msgSections::-webkit-scrollbar-track {
+    border: 1px solid #264653;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.msgSections::-webkit-scrollbar-thumb {
+    background-color: #264653;
+    border-radius: 10px;
+}
+
+.messagesDiv {
+    width: 100%;
+}
+
+.msg {
+    width: 95%;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 2px solid #707070;
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.msg img {
+    position: relative;
+}
+
+.msg::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 46px;
+    top: 34px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #10D410;
+    z-index: 1;
+}
+
+.msg:nth-child(odd)::before {
+    background-color: #808080;
+}
+
+.msg:last-child {
+    border: none;
+}
+
+.msgTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.msgTxt h6 {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+}
+
+.msgTxt span {
+    font-size: 12px;
+}
+
+.faStar {
+    color: #707070 !important;
+    font-size: 14px !important;
+    padding-bottom: 15px !important;
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+    position: absolute !important;
+    right: 5px !important;
+}
+
+.yellow-star {
+    color: #ffff00 !important;
+}
+
+.editProfileSection2 {
+    width: 100%;
+    height: 90%;
+    margin: 90px 0;
+}
+
+.editProfileTop {
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #ff0010;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 30px
+}
+
+.editProfileTop span {
+    color: #3D9B8E;
+    font-size: 20px;
+    width: 200px;
+    padding-left: 20px;
+    padding-bottom: 9px;
+    border-bottom: 4px solid #3D9B8E;
+}
+
+.editProfileInput {
+    border-bottom: 2px solid #264653;
+    padding-bottom: 300px;
+}
+
+.editProfileInputFields {
+    padding: 10px;
+    height: 55px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-left: 20px;
+    margin-bottom: 15px;
+
+}
+
+.editProfileFirstNameInput input {
+    width: 88% !important;
+}
+
+.editProfileInputFields input {
+    width: 85%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.EditProfileBTNDiv {
+    width: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+.EditProfileBTNDiv a {
+    padding: 27px 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #E8C56B;
+    font-size: 14px;
+}
+
+.EditProfileBTNDiv a:hover {
+    color: #E8C56B;
+}
+
+.EditProfileBTNDiv a::after {
+    content: "Save Changes";
+    left: 23%;
+    top: 30% !important;
+}
+
+.EditProfileDeleteBTNDiv {
+    width: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+.EditProfileDeleteBTNDiv a {
+    padding: 27px 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #fff;
+}
+
+.EditProfileDeleteBTNDiv a:hover {
+    color: #fff;
+}
+
+.EditProfileDeleteBTNDiv a::after {
+    content: "Delete";
+    top: 30% !important;
+}
+
+.EditProfileDeleteBTNDiv .loginBTNCustom {
+    background-color: #E56E50;
+    border: 5px solid #8D2E16;
+    box-shadow: #F3B516 -1px 16px 0px -12px;
+    transition: 0.6s;
+}
+
+.loginBTNCustom:hover {
+    box-shadow: #F3B516 -1px 20px 0px -12px;
+}
+
+.EditProfileDeleteBTNDiv .loginBTNCustom:hover {
+    box-shadow: #F3B516 -1px 20px 0px -12px;
+}
+
+.EditProfileDeleteBTNDiv .topIMG {
+    filter: opacity(0.5) brightness(5);
+}
+
+.EditProfileDeleteBTNDiv .loginBTNCustom::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 8px;
+    right: 10px;
+    top: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.editProfileSection2 h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* EDIT PROFILE CSS End*/
+
+
+/* MEDIA QUERIES Start*/
+@media (max-width:1200px) {
+    .loginBTNCustom {
+        padding: 24px 80px;
+    }
+
+    .bottomIMG {
+        width: 160px !important;
+    }
+}
+
+@media (max-width:992px) {
+    .navbaar {
+        justify-content: space-between !important;
+    }
+
+    .profileAvatar1 {
+        margin-top: 0;
+    }
+
+    .editProfileSection2 {
+        margin-top: 0px;
+    }
+
+    .toggleProfileMenus {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        top: -5px;
+        left: -6%;
+        background-color: transparent;
+        z-index: 2;
+    }
+
+    .profileAvatar {
+        margin-top: 0;
+    }
+
+    .faqSection {
+        width: 100%;
+        background: url(../Images/bg-wool-light.png);
+        padding: 50px 0;
+    }
+
+    .loginBTN::before {
+        top: 13px;
+    }
+
+    .navbaar ul {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        top: 120px;
+        left: 0;
+    }
+
+    .navbaar ul li {
+        margin-bottom: 30px;
+        margin-right: 0;
+        display: none;
+    }
+
+    .faBars {
+        display: block;
+    }
+
+    .LoginBTNimg {
+        width: 50%;
+        height: 50px;
+    }
+
+    .loginForm input {
+        width: 50%;
+    }
+
+    .loginBTNCustom {
+        padding: 27px 100px;
+    }
+
+    .bottomIMG {
+        width: 100% !important;
+    }
+}
+
+@media (max-width:800px) {
+    .loginBTN {
+        top: 13px;
+    }
+
+    .section-one-txt {
+        margin-top: 80px;
+    }
+
+    .section-one-txt h1 {
+        text-align: center;
+    }
+
+    .section-one-txt h3 {
+        text-align: center;
+    }
+
+    .section-one-txt p {
+        text-align: center;
+    }
+
+    .navbaar {
+        justify-content: space-between;
+    }
+
+    .faBars {
+        padding-bottom: 20px;
+    }
+
+    .members {
+        width: 100%;
+    }
+}
+
+@media (max-width:1335px) {
+    .section {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width:801px) {
+    .loginBTN {
+        top: 13px;
+    }
+}
+
+@media (max-width:500px) {
+    .accordion-item {
+        margin: 0 !important;
+        margin-bottom: 40px !important;
+    }
+
+    .loginBTN {
+        top: 13px;
+    }
+
+    .leftIndicator {
+        display: none;
+    }
+
+    .rightIndicator {
+        display: none;
+    }
+
+    .sectionThreeBTN {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-links {
+        padding-left: 25px;
+    }
+
+    .footer-contact {
+        padding-left: 25px;
+    }
+}
+
+@media (min-width:220px) {
+    .loginBTN {
+        top: 13px;
+    }
+}
+
+@media (max-width:1190px) {
+    .sectionBackground {
+        height: 600px;
+    }
+
+    .sectionBackground2 {
+        height: 600px;
+    }
+
+    .footer {
+        padding-top: 500px;
+    }
+
+    .imgWhale {
+        top: 48%;
+        right: 20%;
+    }
+}
+
+@media (max-width:830px) {
+    .imgWhale {
+        width: 80%;
+        right: 10%;
+    }
+
+    .sectionThreeBTN {
+        padding: 28px 60px;
+    }
+}
+
+@media (max-width:538px) {
+    .imgWhale {
+        top: 70%;
+    }
+
+    .sectionThreeBTN {
+        padding: 25px 40px;
+        font-size: 18px;
+    }
+
+    .sectionBackground {
+        height: 500px;
+    }
+
+    .sectionBackground2 {
+        height: 500px;
+    }
+}
+
+@media (max-width:450px) {
+    .footer {
+        padding-top: 500px;
+    }
+
+    .sectionThreeBTN {
+        padding: 15px 30px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .section-three h2 {
+        padding-left: 20px;
+    }
+
+    .section2 h2 {
+        padding-left: 20px;
+    }
+
+    .sectionThreeBTN::before {
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+    .sectionThreeBTN {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:360px) {
+    .editProfileSection1-3 .msgDiv .lastSpan {
+        padding-left: 0;
+        position: absolute;
+        right: 30px;
+    }
+}
+
+@media (max-width:330px) {
+    .sectionThreeBTN {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:600px) {
+    .loginForm input {
+        width: 90%;
+    }
+
+    .registerForm input {
+        width: 90%;
+    }
+
+    .profileSection {
+        width: 100%;
+        background-color: #D3E2E0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profileImg {
+        margin-bottom: 50px;
+    }
+
+    .profileText {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profileText p {
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERIES End*/
